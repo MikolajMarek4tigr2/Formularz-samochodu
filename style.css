@@ -6,8 +6,12 @@ form {
 }
 input{
     margin-top: 5px;
-
+    color: black;
     justify-items: center;
+}
+
+option {
+    color: black;
 }
 
 label {
@@ -30,4 +34,16 @@ fieldset {
 * {
     font-family: sans-serif;
     font-weight: 800;
+    color: white;
+}
+
+body {
+    background-image: url(https://img.freepik.com/premium-zdjecie/widok-z-przodu-generycznego-i-markowego-samochodu-moder_110488-502.jpg);
+background-repeat: no-repeat;
+background-size: 100% 120%;
+
+}
+
+.fon {
+    color: black;
 }
