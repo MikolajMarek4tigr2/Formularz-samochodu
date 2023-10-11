@@ -19,3 +19,7 @@ h1 {
 select {
     margin-top: 7px;
 }
+ 
+fieldset {
+    margin-top: 1rem;
+}
