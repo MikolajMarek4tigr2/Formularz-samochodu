@@ -11,28 +11,29 @@
     <h1>Samochód</h1>
     <form action="">
         <fieldset name="dane"><legend>Twoje Dane</legend>
-        <label for="name">Imię: </label><input type="text" id="name" name="name" placeholder='"Jan'><br>
-        <label for="name">Nazwisko:  </label><input type="text" id="surname" name="surname" placeholder='"Kowalski"'><br>
-        <label for="name">PESEL: </label><input type="text" id="pesel" name="pesel" placeholder='"03020362257"'><br>
-        <label for="email">Email: </label><input type="email" name="email" id="email" placeholder="Jan.Kowalski@gmail.com"><br>
-        <label for="tel">Numer: </label><input type="tel" name="tel" id="tel" placeholder="+48 123 456 789">
+        <label for="name">Imię </label><input type="text" id="name" name="name" placeholder='"Jan'><br>
+        <label for="name">Nazwisko  </label><input type="text" id="surname" name="surname" placeholder='"Kowalski"'><br>
+        <label for="name">PESEL </label><input type="text" id="pesel" name="pesel" placeholder='"03020362257"'><br>
+        <label for="email">Email </label><input type="email" name="email" id="email" placeholder="Jan.Kowalski@gmail.com"><br>
+        <label for="tel">Numer </label><input type="tel" name="tel" id="tel" placeholder="+48 123 456 789"><br>
+        <label for="kraj">Kraj </label><input type="text" name="kraj" id="kraj" placeholder='"Polska"'>
     </fieldset>
         <fieldset name="car"> <Legend>Dane Samochodu</Legend>
-            <label for="rok">Rok produkcji: </label><input type="range" id="rok" name="rok" min="1950" max="2024" value="1950" step="1" oninput="resu.value=rok.value"/>          
-            <output name="resu" for="rok">1950</output><br>
-            <label for="przebieg">Przebieg: </label><input type="range" id="przebieg" name="przebieg" min="1" max="300000" step="1" oninput="result.value=przebieg.value" value="1"/>          
+            <label for="rok">Rok produkcji </label><input type="range" id="rok" name="rok" min="1950" max="2024" value="1950" step="1" oninput="resu.value=rok.value"/>          
+            <output name="resu" for="rok">1950</output><label for="rok">r.</label><br>
+            <label for="przebieg">Przebieg </label><input type="range" id="przebieg" name="przebieg" min="1" max="300000" step="1" oninput="result.value=przebieg.value" value="1"/>          
             <output name="result" for="przebieg">1</output><label for="przebieg">km</label><br>
-            <label for="marka">Marka: </label><select name="marka" id="marka">
+            <label for="marka">Marka </label><select name="marka" id="marka">
                 <option value=" "> </option>
                 <option value="BMW">BMW</option>
                 <option value="Mercedes">Mercedes</option>
                 <option value="Ford">Ford</option>
                 <option value="Ferrari">Ferrari</option>
             </select><br>
-            <label for="kolor">Kolor: </label><input type="color" name="color" id="color"><br>
-            <label for="Pozycja">Pozycja kierownicy:</label><br><label for="left">Lewa</label><input type="radio" name="pozycja" id="left">
+            <label for="kolor">Kolor </label><input type="color" name="color" id="color"><br>
+            <label for="Pozycja">Pozycja kierownicy</label><br><label for="left">Lewa</label><input type="radio" name="pozycja" id="left">
             <label for="Right">Prawa</label><input type="radio" name="pozycja" id="right"><br>
-            <label for="Adds">Dodatki:</label><br>
+            <label for="Adds">Dodatki </label><br>
             <label for="Klimatyzacja">klimatyzacja</label><input type="checkbox" name="adds" id="klimatyzacja">
             <label for="Szyberdach">szyberdach</label><input type="checkbox" name="adds" id="szyberdach">
             <label for="Ogrzewanie">ogrzewanie</label><input type="checkbox" name="adds" id="ogrzewanie">
@@ -41,8 +42,8 @@
             <label for="radio">Radio</label><input type="checkbox" name="adds" id="radio">
         </fieldset>
         <fieldset> <legend>Zamówienie</legend>
-            <label for="ilosc">Ilość: </label><input type="number" name="ilosc" id="ilosc" max="5" min="1" placeholder="1-5"><br>
-            <label for="cena">Max. Cena: </label><input type="number" id="cena" name="cena" min="1" max="1000000" step="500" value="" placeholder='"100000"'/><label for="cena">zł</label><br>          
+            <label for="ilosc">Ilość </label><input type="number" name="ilosc" id="ilosc" max="5" min="1" placeholder="1-5"><br>
+            <label for="cena">Max. Cena </label><input type="number" id="cena" name="cena" min="1" max="1000000" step="500" value="" placeholder='"100000"'/><label for="cena">zł</label><br>          
             <label for="uwagi">Uwagi:</label><br><textarea name="uwagi" id="uwagi"></textarea>
         </fieldset>
         <div class="fon">
@@ -58,5 +59,7 @@
 </div>
 </form>
 
+</body>
+</html>
 </body>
 </html>
