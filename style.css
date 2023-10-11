@@ -48,3 +48,8 @@ background-size: 100% 150%;
 .fon {
     color: black;
 }
+textarea {
+    width: 15rem;
+    height: 5rem;
+    color: black;
+}
