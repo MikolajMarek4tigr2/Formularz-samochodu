@@ -9,15 +9,25 @@
 <body>
     <h1>Samochód</h1>
     <form action="">
-        <label for="dane"> Twoje Dane</label><fieldset name="dane">
-        <label for="name">Imię: </label><input type="text" id="name" name="name"><br>
-        <label for="name">Nazwisko:  </label><input type="text" id="surname" name="surname"><br>
-        <label for="name">PESEL: </label><input type="text" id="pesel" name="pesel"><br>
+        <fieldset name="dane"><legend>Twoje Dane</legend>
+        <label for="name">Imię: </label><input type="text" id="name" name="name" placeholder='"Jan'><br>
+        <label for="name">Nazwisko:  </label><input type="text" id="surname" name="surname" placeholder='"Kowalski"'><br>
+        <label for="name">PESEL: </label><input type="text" id="pesel" name="pesel" placeholder='"03020362257"'><br>
         </fieldset>
-        <label for="car">Dane Samochodu</label><fieldset name="car">
-            <label for="przebieg">Przebieg </label><input type="range" id="przebieg" name="przebieg" min="1" max="300000" step="1" oninput="result.value=przebieg.value" value="1"/>          
-            <output name="result" for="przebieg">1</output><label for="przebieg">km</label>
+        <fieldset name="car"> <Legend>Dane Samochodu</Legend>
+            <label for="przebieg">Przebieg: </label><input type="range" id="przebieg" name="przebieg" min="1" max="300000" step="1" oninput="result.value=przebieg.value" value="1"/>          
+            <output name="result" for="przebieg">1</output><label for="przebieg">km</label><br>
+            <label for="marka">Marka: </label><select name="marka" id="marka">
+                <option value=" "> </option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Ford">Ford</option>
+                <option value="Ferrari">Ferrari</option>
+            </select><br>
+            <label for="pozycja">Pozycja kierownicy:</label><br><label for="left">L</label><input type="radio" name="pozycja" id="left">
+            <label for="right">P</label><input type="radio" name="pozycja" id="right">
         </fieldset>
+
     </form>
 
 </body>
