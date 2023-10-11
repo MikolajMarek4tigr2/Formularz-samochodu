@@ -13,7 +13,9 @@
         <label for="name">Imię: </label><input type="text" id="name" name="name" placeholder='"Jan'><br>
         <label for="name">Nazwisko:  </label><input type="text" id="surname" name="surname" placeholder='"Kowalski"'><br>
         <label for="name">PESEL: </label><input type="text" id="pesel" name="pesel" placeholder='"03020362257"'><br>
-        </fieldset>
+        <label for="email">Email: </label><input type="email" name="email" id="email" placeholder="Jan.Kowalski@gmail.com"><br>
+        <label for="tel">Numer: </label><input type="tel" name="tel" id="tel" placeholder="+48 123 456 789">
+    </fieldset>
         <fieldset name="car"> <Legend>Dane Samochodu</Legend>
             <label for="przebieg">Przebieg: </label><input type="range" id="przebieg" name="przebieg" min="1" max="300000" step="1" oninput="result.value=przebieg.value" value="1"/>          
             <output name="result" for="przebieg">1</output><label for="przebieg">km</label><br>
@@ -24,10 +26,23 @@
                 <option value="Ford">Ford</option>
                 <option value="Ferrari">Ferrari</option>
             </select><br>
-            <label for="pozycja">Pozycja kierownicy:</label><br><label for="left">L</label><input type="radio" name="pozycja" id="left">
-            <label for="right">P</label><input type="radio" name="pozycja" id="right">
+            <label for="Pozycja">Pozycja kierownicy:</label><br><label for="left">L</label><input type="radio" name="pozycja" id="left">
+            <label for="Right">P</label><input type="radio" name="pozycja" id="right"><br>
+            <label for="Adds">Dodatki:</label><br>
+            <label for="Klimatyzacja">klimatyzacja</label><input type="checkbox" name="adds" id="klimatyzacja">
+            <label for="Szyberdach">szyberdach</label><input type="checkbox" name="adds" id="szyberdach">
+            <label for="Ogrzewanie">ogrzewanie</label><input type="checkbox" name="adds" id="ogrzewanie">
+            <label for="tv"></label>TV<input type="checkbox" name="adds" id="tv">
+            <label for="ubezpieczenie">Ubezpieczenie</label><input type="checkbox" name="adds" id="ubezpieczenie">
+            <label for="radio">Radio</label><input type="checkbox" name="adds" id="radio">
         </fieldset>
-
+        <fieldset> <legend>Zamówienie</legend>
+            
+        </fieldset>
+        <div>
+        <input type="reset" value="Wyczyść">
+        <input type="submit" value="Zatwierdź">
+        </div>
     </form>
 
 </body>
