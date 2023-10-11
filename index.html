@@ -11,13 +11,15 @@
     <h1>Samochód</h1>
     <form action="">
         <fieldset name="dane"><legend>Twoje Dane</legend>
-        <label for="name">Imię: </label><input type="text" id="name" name="name" placeholder='"Jan"'><br>
+        <label for="name">Imię: </label><input type="text" id="name" name="name" placeholder='"Jan'><br>
         <label for="name">Nazwisko:  </label><input type="text" id="surname" name="surname" placeholder='"Kowalski"'><br>
         <label for="name">PESEL: </label><input type="text" id="pesel" name="pesel" placeholder='"03020362257"'><br>
         <label for="email">Email: </label><input type="email" name="email" id="email" placeholder="Jan.Kowalski@gmail.com"><br>
         <label for="tel">Numer: </label><input type="tel" name="tel" id="tel" placeholder="+48 123 456 789">
     </fieldset>
         <fieldset name="car"> <Legend>Dane Samochodu</Legend>
+            <label for="rok">Rok produkcji: </label><input type="range" id="rok" name="rok" min="1950" max="2024" value="1950" step="1" oninput="resu.value=rok.value"/>          
+            <output name="resu" for="rok">1950</output><br>
             <label for="przebieg">Przebieg: </label><input type="range" id="przebieg" name="przebieg" min="1" max="300000" step="1" oninput="result.value=przebieg.value" value="1"/>          
             <output name="result" for="przebieg">1</output><label for="przebieg">km</label><br>
             <label for="marka">Marka: </label><select name="marka" id="marka">
@@ -55,9 +57,6 @@
  <input type="button" value="Zamieść komentarz" name="komentarz" id="komentarz1">
 </div>
 </form>
-
-</body>
-</html>
 
 </body>
 </html>
